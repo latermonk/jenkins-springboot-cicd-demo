@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('getdemo') {
             steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Jenkins-author-https', url: 'https://gitee.com/vagrant_natural_disaster/jenkins-springboot-cicd-demo.git']]])            }
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Jenkins-author-https', url: 'https://github.com/latermonk/jenkins-springboot-cicd-demo.git']]])            }
         }
 
           stage('pack') {
